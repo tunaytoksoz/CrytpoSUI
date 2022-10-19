@@ -39,7 +39,8 @@ struct MainView: View {
                 
             }.navigationTitle("Cryptos")
         }.task {
-           await cryptoListViewModel.downloadCryptosAsync(url: url!)
+            await cryptoListViewModel.downloadCryptosContinuation(url: url!)
+            //await cryptoListViewModel.downloadCryptosAsync(url: url!)
         }
     }
 }

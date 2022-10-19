@@ -14,6 +14,21 @@ class CryptoListViewModel : ObservableObject {
     
     let webService = WebService()
     
+    
+    func downloadCryptosContinuation(url: URL) async {
+        do {
+            let cryptos = try await webService.downloadCurrenciesContinuation(url: url)
+            DispatchQueue.main.async {
+                self.cryptoList = cryptos.map(CryptoViewModel.init)
+            }
+        } catch{
+            print(error)
+        }
+        
+    }
+    
+    
+    /*
     func downloadCryptosAsync(url: URL) async{
         do {
             let cryptos = try await webService.dowloadCurrenciesAsync(url: url)
@@ -24,6 +39,7 @@ class CryptoListViewModel : ObservableObject {
             print(error)
         }
     }
+    */
     /*
     func downloadCryptos(url : URL) {
         
