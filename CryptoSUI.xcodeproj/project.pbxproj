@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6611388F2906AB3A00E67D1B /* CryptoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6611388E2906AB3A00E67D1B /* CryptoDetailView.swift */; };
 		665C5C6C28DB3A2400CFAA37 /* CryptoSUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665C5C6B28DB3A2400CFAA37 /* CryptoSUIApp.swift */; };
 		665C5C6E28DB3A2400CFAA37 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665C5C6D28DB3A2400CFAA37 /* MainView.swift */; };
 		665C5C7028DB3A2700CFAA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 665C5C6F28DB3A2700CFAA37 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6611388E2906AB3A00E67D1B /* CryptoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailView.swift; sourceTree = "<group>"; };
 		665C5C6828DB3A2400CFAA37 /* CryptoSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		665C5C6B28DB3A2400CFAA37 /* CryptoSUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoSUIApp.swift; sourceTree = "<group>"; };
 		665C5C6D28DB3A2400CFAA37 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				665C5C6D28DB3A2400CFAA37 /* MainView.swift */,
+				6611388E2906AB3A00E67D1B /* CryptoDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6611388F2906AB3A00E67D1B /* CryptoDetailView.swift in Sources */,
 				665C5C6E28DB3A2400CFAA37 /* MainView.swift in Sources */,
 				665C5C7E28DB3B9F00CFAA37 /* CryptoCurrency.swift in Sources */,
 				665C5C8028DB3EBE00CFAA37 /* WebService.swift in Sources */,
@@ -319,7 +323,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,7 +353,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

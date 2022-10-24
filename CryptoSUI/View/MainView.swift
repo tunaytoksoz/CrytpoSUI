@@ -23,20 +23,21 @@ struct MainView: View {
         
         NavigationView {
             List(cryptoListViewModel.cryptoList, id:\.id) { crypto in
-                    HStack{
-                        VStack{
-                            Text(crypto.currency).frame(maxWidth: .infinity, alignment: .leading)
-                            Text(crypto.name).frame(maxWidth: .infinity,alignment: .leading)
-                            Text(crypto.price).frame(maxWidth: .infinity,alignment: .leading)
-                        }
-                        AsyncImage(url: URL(string: crypto.logo_url)) { image in
-                            image.resizable().frame(width: 40, height: 40, alignment: .leading)
-                        } placeholder: {
-                            ProgressView()
-                        }.frame(maxWidth: .infinity).padding()
+                HStack{
+                    VStack{
+                        Text(crypto.currency).frame(maxWidth: .infinity, alignment: .leading)
+                        Text(crypto.name).frame(maxWidth: .infinity,alignment: .leading)
+                        Text(crypto.price).frame(maxWidth: .infinity,alignment: .leading)
                     }
-                
-                
+                    AsyncImage(url: URL(string: crypto.logo_url)) { image in
+                        image.resizable().frame(width: 40, height: 40, alignment: .leading)
+                    } placeholder: {
+                        ProgressView()
+                    }.frame(maxWidth: .infinity).padding()
+                    NavigationLink(destination: CryptoDetailView(crypto: crypto.crypto)) {
+                        //
+                    }
+                }
             }.navigationTitle("Cryptos")
         }.task {
             await cryptoListViewModel.downloadCryptosContinuation(url: url!)
